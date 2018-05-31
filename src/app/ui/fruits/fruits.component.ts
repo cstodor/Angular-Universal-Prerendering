@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFirestore } from 'angularfire2/firestore';
+import { Observable } from 'rxjs';
+import { IfStmt } from '@angular/compiler';
 
 @Component({
   selector: 'app-fruits',
@@ -7,7 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FruitsComponent implements OnInit {
 
-  constructor() { }
+  fruits: Observable<{}[]>;
+
+  constructor(
+    fsDb: AngularFirestore
+  ) {
+    this.fruits = fsDb.collection('fruits').valueChanges();
+    this.fruits.subscribe(fruitsRes => {
+      console.log(fruitsRes);
+    });
+  }
 
   ngOnInit() {
   }
