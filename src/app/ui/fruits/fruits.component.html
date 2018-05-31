@@ -1,7 +1,8 @@
+<h1>Fruits List</h1>
+
 <p>Fruits loaded from Firestore:</p>
-<ul>
-  <li *ngFor="let fruit of fruits | async">
-    {{ fruit.name }}
-    {{ fruit.descr }}
-  </li>
-</ul>
+
+<div *ngFor="let fruit of fruits | async" class="fruit-item">
+  <h2>{{ fruit.name }}</h2>
+  <p>{{ fruit.descr }}</p>
+</div>
