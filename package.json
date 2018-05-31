@@ -23,6 +23,7 @@
     "@angular/pwa": "^0.6.7",
     "@angular/router": "^6.0.3",
     "@angular/service-worker": "^6.0.3",
+    "@nguniversal/module-map-ngfactory-loader": "^6.0.0",
     "angularfire2": "^5.0.0-rc.10",
     "core-js": "^2.5.7",
     "firebase": "^5.0.4",
