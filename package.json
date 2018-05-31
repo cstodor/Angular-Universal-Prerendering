@@ -7,7 +7,11 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "webpack:prerender": "webpack --config webpack.prerender.config.js",
+    "build:prerender": "node dist/Angular-Universal-Prerendering/prerender.js",
+    "serve:prerender": "http-server dist/Angular-Universal-Prerendering -o",
+    "build:all": "ng build --prod && ng run Angular-Universal-Prerendering:server && npm run webpack:prerender && npm run build:prerender"
   },
   "private": true,
   "dependencies": {
