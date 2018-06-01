@@ -19,8 +19,7 @@ const ROUTES = [
     '/',
     '/fruits',
     '/contact',
-    '/authentication',
-    '/some/deep/route'
+    '/authentication'
 ];
 
 const APP_NAME = 'Angular-Universal-Prerendering';
