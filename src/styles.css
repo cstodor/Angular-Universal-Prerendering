@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+.fruit-item {
+    border: 1px solid #ccc;
+    padding: 0 1rem;
+    margin: 1rem;
+}
+
+li a.active {
+    color: red;
+}

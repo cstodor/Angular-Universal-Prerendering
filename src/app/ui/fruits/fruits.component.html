@@ -2,7 +2,7 @@
 
 <p>Fruits loaded from Firestore:</p>
 
-<div *ngFor="let fruit of fruits | async" class="fruit-item">
+<div *ngFor="let fruit of fruits$ | async" class="fruit-item">
   <h2>{{ fruit.name }}</h2>
   <p>{{ fruit.descr }}</p>
 </div>

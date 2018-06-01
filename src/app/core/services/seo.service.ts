@@ -16,7 +16,7 @@ export class SeoService {
     this.title.setTitle(title);
   }
 
-  // Set Facebook OG Tags
+  // Set Twitter Meta Tags
   setTwitterMetaTags(card: string, site: string, title: string, description: string, image: string) {
     this.meta.updateTag({ name: 'twitter:card', content: card });
     this.meta.updateTag({ name: 'twitter:site', content: site });
